@@ -3,171 +3,170 @@ import { DailyNews } from '@/types';
 export const dailyNewsData: DailyNews = {
   date: "2026年2月12日",
   weekday: "星期四",
-  message: "腊月十五，月圆人安。愿你今日事今日毕，明日事早规划！",
-  summary: "今日 AI 世界核心主题：监管收紧（印度深度伪造法规）+ 商业化加速（ChatGPT 广告上线）+ 人才流动（xAI 高管离职）+ 中国力量（智谱 GLM-5 上热门）。",
+  message: "正月将尽，春意渐浓。愿你在新的一年，如 AI 般迭代进化，如春天般充满可能。",
+  summary: "今日 AI 核心主题：OpenAI 动荡（解散安全团队、放弃硬件品牌）+ 产品延期（苹果 Siri 推迟）+ 资本火热（多家 AI 初创融资）+ 监管加码（印度深度伪造检测、Clearview AI 军用）。",
   news: [
     // 头条新闻
     {
       id: "1",
-      title: "Instagram 和 X 面临深度伪造检测期限压力",
-      summary: "印度要求社交媒体平台在收到请求后 3 小时内删除深度伪造内容，所有合成内容必须标注。",
-      source: "The Verge",
-      url: "https://www.theverge.com/ai-artificial-intelligence/877206/youtube-instagram-x-india-deepfake-detection-deadline",
+      title: "OpenAI 解散\"使命对齐\"安全团队",
+      summary: "OpenAI 正式解散了专注于\"安全可信\"AI 开发的 Mission Alignment 团队，团队负责人转任首席未来学家。",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team/",
       category: "headline"
     },
     {
       id: "2",
-      title: "OpenAI 正式启动 ChatGPT 广告试点",
-      summary: "多家品牌宣布将在 ChatGPT 中投放广告，包括 Target、Ford、Mazda 等。仅免费用户可见。",
+      title: "OpenAI 放弃\"io\"硬件品牌",
+      summary: "在面临商标诉讼后，OpenAI 确认不会使用\"io\"作为其 AI 硬件设备品牌，该设备预计2027年才会上市。",
+      source: "Wired",
+      url: "https://www.wired.com/story/openai-drops-io-branding-hardware-devices/",
+      category: "headline"
+    },
+    {
+      id: "3",
+      title: "苹果 Siri 大改版再次推迟",
+      summary: "原定于 iOS 26.4（3月发布）推出的 Siri 个性化功能将推迟至 iOS 26.5（5月）甚至 iOS 27（9月）。",
       source: "The Verge",
-      url: "https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible",
+      url: "https://www.theverge.com/tech/877494/apple-siri-ai-overhaul-ios-personalized",
       category: "headline"
     },
     // 行业动态
     {
-      id: "3",
-      title: "轨道 AI 数据中心的经济学挑战",
-      summary: "建造 1GW 轨道数据中心成本约 424 亿美元，是地面数据中心的近三倍。",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/02/11/why-the-economics-of-orbital-ai-are-so-brutal/",
-      category: "industry"
-    },
-    {
       id: "4",
-      title: "Threads 推出 \"Dear Algo\" AI 功能",
-      summary: "用户可告诉 Threads 暂时希望在 feed 中看到更多或更少的内容，实现个性化推荐。",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/02/11/threads-new-dear-algo-ai-feature-lets-you-personalize-your-feed/",
+      title: "AI 安全争议：OpenClaw 引发安全专家担忧",
+      summary: "病毒式传播的 AI 助手工具 OpenClaw 因其安全隐患引发广泛关注，甚至引起中国政府发布安全警告。",
+      source: "MIT Technology Review",
+      url: "https://www.technologyreview.com/",
       category: "industry"
     },
     {
       id: "5",
-      title: "Monaco AI 销售初创公司挑战 Salesforce",
-      summary: "前 Founders Fund VC 推出 AI 原生 CRM 系统 Monaco，获得 Collison 兄弟和 Garry Tan 投资。",
+      title: "Anthropic 承诺承担数据中心电费升级成本",
+      summary: "Anthropic 承诺支付100%的电网升级费用，避免其数据中心推高周边居民的电费账单。",
+      source: "Anthropic",
+      url: "https://www.anthropic.com/news",
+      category: "industry"
+    },
+    {
+      id: "6",
+      title: "xAI 多名高管离职",
+      summary: "马斯克暗示 xAI 近期多位高管离职是\"被推动\"而非主动离开，包括联合创始人等核心人员。",
       source: "TechCrunch",
-      url: "https://techcrunch.com/2026/02/11/former-founders-fund-vc-sam-blond-launches-ai-sales-startup-to-upend-salesforce/",
+      url: "https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/",
+      category: "industry"
+    },
+    {
+      id: "7",
+      title: "Glean 争夺企业 AI 层控制权",
+      summary: "企业搜索起家的 Glean 正转型为\"AI 工作助手\"，目标是成为连接所有企业 AI 应用的核心层。",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/",
       category: "industry"
     },
     // 资本市场
     {
-      id: "6",
-      title: "Meridian 获 1700 万美元融资重塑智能电子表格",
-      summary: "打造 \"代理式电子表格\"，让 AI 自动处理数据分析任务。",
+      id: "8",
+      title: "Modal Labs 拟以 25 亿美元估值融资",
+      summary: "AI 推理初创公司 Modal Labs 正与 General Catalyst 洽谈融资，公司成立仅4年。",
       source: "TechCrunch",
-      url: "https://techcrunch.com/2026/02/11/meridian-ai-raises-17-million-to-remake-the-agentic-spreadsheet/",
+      url: "https://techcrunch.com/",
       category: "capital"
     },
     {
-      id: "7",
-      title: "2026年科技巨头AI投资将超6700亿美元",
-      summary: "Meta、微软、亚马逊和 Alphabet 计划在 AI 基础设施上投入巨资，超越阿波罗登月计划。",
-      source: "WSJ",
-      url: "https://www.wsj.com/tech/ai/ai-spending-tech-companies-compared-02b90046",
+      id: "9",
+      title: "Barclays 银行押注 AI 降本增效",
+      summary: "巴克莱银行2025年利润增长12%，将 AI 定位为提升效率、实现2028年更高业绩目标的关键驱动力。",
+      source: "Financial Times",
+      url: "https://www.ft.com/",
+      category: "capital"
+    },
+    {
+      id: "10",
+      title: "Railway 获 1 亿美元融资挑战 AWS",
+      summary: "AI 原生云平台 Railway 完成 B 轮融资，主打秒级部署和比亚马逊云低65%的成本。",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/",
       category: "capital"
     },
     // 全球格局
     {
-      id: "8",
-      title: "美国两党联合提出CLEAR法案",
-      summary: "要求科技公司书面报告使用版权作品训练 AI 模型的情况，提高数据透明度。",
-      source: "The Verge",
-      url: "https://www.theverge.com/2026/2/10/clear-act-ai-copyright-schiff-curtis",
+      id: "11",
+      title: "Uber Eats 推出 AI 购物车助手",
+      summary: "Uber Eats 新功能\"Cart Assistant\"可根据文字或图片提示自动添加商品到购物车。",
+      source: "Uber",
+      url: "https://www.uber.com/newsroom/",
       category: "global"
     },
     {
-      id: "9",
-      title: "OpenAI发布GPT-5.3-Codex编程模型",
-      summary: "首个\"在自身创建过程中发挥重要作用\"的模型，在 SWE-Bench Pro 上达到 SOTA。",
-      source: "OpenAI",
-      url: "https://openai.com/index/introducing-gpt-5-3-codex/",
+      id: "12",
+      title: "印度要求社交平台部署深度伪造检测",
+      summary: "Instagram、X、YouTube 等平台被印度政府要求在短期内上线深度伪造检测功能。",
+      source: "TechCrunch",
+      url: "https://techcrunch.com/2026/02/10/india-orders-social-media-platforms-to-take-down-deepfakes-faster/",
       category: "global"
     },
     {
-      id: "10",
-      title: "Anthropic升级Opus 4.6多领域领先",
-      summary: "在代理编码、计算机使用、工具使用、搜索和金融领域均达行业领先水平。",
-      source: "Anthropic",
-      url: "https://www.anthropic.com/news",
+      id: "13",
+      title: "美边境巡逻队签约 Clearview AI 人脸识别",
+      summary: "美国海关与边境保护局将使用 Clearview AI 的面部识别技术进行\"战术目标定位\"。",
+      source: "Reuters",
+      url: "https://www.reuters.com/",
       category: "global"
     },
     // 硬件与机器人
     {
-      id: "11",
-      title: "Boston Dynamics下一代人形机器人融合 DeepMind DNA",
-      summary: "CES 2026 上宣布合作，将使用 DeepMind 的 AI 基础模型进行机器人研究。",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
-      category: "hardware"
-    },
-    {
-      id: "12",
-      title: "Google计划加倍AI支出以应对竞争",
-      summary: "加速数据中心建设以运行和训练 AI 模型，DeepMind 成为核心产品转型中心。",
-      source: "NYT",
-      url: "https://www.nytimes.com/2026/02/04/business/google-earnings-ai.html",
-      category: "hardware"
-    },
-    // 产品与趋势
-    {
-      id: "13",
-      title: "YouTube Music推出AI播放列表生成器",
-      summary: "Premium用户可通过语音或文字描述，让AI生成个性化播放列表。",
-      source: "The Verge",
-      url: "https://www.theverge.com/2026/2/10/youtube-music-ai-playlists-feature",
-      category: "product"
-    },
-    {
       id: "14",
-      title: "xAI 多名高级工程师离职",
-      summary: "包括两名联合创始人在内的至少九名工程师在过去一周宣布离开 xAI。",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/",
-      category: "global"
+      title: "纽约州无企业承认用 AI 取代员工",
+      summary: "尽管纽约州近一年前就要求企业披露是否因\"技术创新或自动化\"导致裁员，但至今无一家公司承认。",
+      source: "The Guardian",
+      url: "https://www.theguardian.com/",
+      category: "hardware"
     },
     {
       id: "15",
-      title: "印度要求社交平台3小时内删除深度伪造内容",
-      summary: "修订IT规则，所有合成音视频需标注可追踪，新规2月20日生效。",
-      source: "TechCrunch",
-      url: "https://techcrunch.com/2026/02/10/india-orders-social-media-platforms-to-take-down-deepfakes-faster/",
-      category: "industry"
+      title: "MIT 启动 AI 抗抗生素耐药性研究",
+      summary: "MIT 获得 300 万美元资助，利用合成生物学和生成式 AI 开发可编程抗菌药物。",
+      source: "MIT News",
+      url: "https://news.mit.edu/",
+      category: "hardware"
     }
   ],
   hotApps: [
     {
       platform: "Product Hunt",
-      name: "happycapy",
-      function: "面向大众的 Agent-native 计算机",
-      highlight: "让普通用户也能使用 AI 代理计算机，降低技术门槛",
+      name: "HappyCapy",
+      function: "面向普通用户的\"Agent 原生计算机\"",
+      highlight: "让 AI 代理计算机平民化",
       url: "https://www.producthunt.com/products/happycapy"
     },
     {
-      platform: "GitHub",
-      name: "GLM-OCR",
-      function: "准确、快速、全面的 OCR 工具",
-      highlight: "智谱开源 OCR 工具，支持多语言和高精度识别",
-      url: "https://github.com/zai-org/GLM-OCR"
+      platform: "Product Hunt",
+      name: "Atyla",
+      function: "专为 AI 搜索引擎优化的 SEO 工具",
+      highlight: "ChatGPT、Gemini 搜索结果优化",
+      url: "https://www.producthunt.com/products/atyla"
     },
     {
-      platform: "Toolify.ai",
-      name: "Seedance 2.0",
-      function: "AI 视频生成器",
-      highlight: "支持 4K 视频生成，图像转视频和文本转视频",
-      url: "https://www.toolify.ai/"
+      platform: "Product Hunt",
+      name: "JumprAI",
+      function: "AI 视频时刻搜索",
+      highlight: "在 YouTube 视频中精准定位任意时刻",
+      url: "https://www.producthunt.com/products/jumprai"
     },
     {
       platform: "Hacker News",
       name: "GLM-5",
-      function: "从 Vibe Coding 到 Agentic Engineering",
-      highlight: "智谱最新大模型，强调工程化代理能力",
+      function: "智谱 AI 最新大模型",
+      highlight: "从氛围编程到智能体工程",
       url: "https://z.ai/blog/glm-5"
     },
     {
-      platform: "Reddit",
-      name: "Claude Code 讨论",
-      function: "Claude Code 功能简化引发热议",
-      highlight: "开发者社区讨论 Claude Code 最近的改动",
-      url: "https://www.reddit.com/r/ClaudeAI/"
+      platform: "Hacker News",
+      name: "Fluorite",
+      function: "游戏引擎",
+      highlight: "与 Flutter 完全集成的控制台级游戏引擎",
+      url: "https://github.com/fluorite-game-engine"
     }
   ]
 };
