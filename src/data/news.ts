@@ -1,9 +1,9 @@
 import { DailyNews } from '@/types';
 
 export const dailyNewsData: DailyNews = {
-  date: "2026年2月12日",
-  weekday: "星期四",
-  message: "正月将尽，春意渐浓。愿你在新的一年，如 AI 般迭代进化，如春天般充满可能。",
+  date: "2026年2月14日",
+  weekday: "星期六",
+  message: "周六早安！今日情人节，愿AI的温暖陪伴你，让生活更加美好甜蜜。享受周末好时光！",
   summary: "今日 AI 核心主题：OpenAI 动荡（解散安全团队、放弃硬件品牌）+ 产品延期（苹果 Siri 推迟）+ 资本火热（多家 AI 初创融资）+ 监管加码（印度深度伪造检测、Clearview AI 军用）。",
   news: [
     // 头条新闻

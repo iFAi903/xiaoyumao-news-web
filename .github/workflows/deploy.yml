@@ -1,0 +1,56 @@
+name: Deploy to Vercel
+
+on:
+  # 每天早上 7:30 自动部署
+  schedule:
+    - cron: '30 7 * * *'
+  
+  # 手动触发
+  workflow_dispatch:
+  
+  # 推送到 main 分支时触发
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'public/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Validate news data
+        run: |
+          echo "🔍 验证新闻数据完整性..."
+          if grep -q "RSS 自动更新测试中" src/data/news.ts || \
+             grep -q "\[自动更新\] AI 新闻正在抓取中" src/data/news.ts || \
+             grep -q "今日 AI 核心主题待更新" src/data/news.ts; then
+            echo "❌ 数据文件包含占位符内容，跳过部署"
+            exit 1
+          fi
+          echo "✅ 数据验证通过"
+      
+      - name: Build project
+        run: npm run build
+      
+      - name: Deploy to Vercel
+        uses: vercel/action-deploy@v1
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: ./
