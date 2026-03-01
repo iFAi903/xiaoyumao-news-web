@@ -1,6 +1,6 @@
-// 2026年3月1日 早报数据
+// 2026年3月1日 早报数据 - 强制刷新版 V3
 export const newsData = {
-  date: "2026年3月1日",
+  date: "2026年3月1日 (已更新)",
   weekday: "星期日",
   solarTerm: "雨水",
   lunarDate: "正月十三",
@@ -135,4 +135,3 @@ export const newsData = {
     }
   ]
 };
-// Updated at Sun Mar  1 14:54:43 CST 2026
